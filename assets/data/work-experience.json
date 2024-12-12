@@ -1,0 +1,28 @@
+{
+  "experiences": [
+    {
+      "position": "CTO",
+      "company": "Igloo",
+      "period": "2022 - Present",
+      "description": "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.",
+      "achievements": [
+        "Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.",
+        "At vero eos et accusamus et iusto odio dignissimos.",
+        "Blanditiis praesentium voluptatum deleniti atque corrupti.",
+        "Maecenas tempus tellus eget."
+      ],
+      "technologies": ["Angular", "Python", "jQuery", "Webpack", "HTML/SASS", "PostgresSQL"]
+    },
+    {
+      "position": "Senior Software Developer",
+      "company": "Google",
+      "period": "2019 - 2023",
+      "description": "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit...",
+      "achievements": [
+        "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+        "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+      ],
+      "technologies": ["React", "Redux", "Django", "Webpack", "HTML/SASS", "MySQL"]
+    }
+  ]
+} 
