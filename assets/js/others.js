@@ -14,41 +14,30 @@ async function loadOtherSections() {
 }
 
 function loadSkills(skills) {
-    // Frontend Skills
-    const frontendList = document.querySelector('.skills-section .resume-skill-item:nth-child(1) ul');
-    frontendList.innerHTML = skills.frontend.items.map(skill => `
-        <li class="mb-2">
-            <div class="resume-skill-name">${skill.name}</div>
-            <div class="progress resume-progress">
-                <div class="progress-bar theme-progress-bar-dark" role="progressbar" 
-                     style="width: ${skill.percentage}%" 
-                     aria-valuenow="${skill.percentage}" 
-                     aria-valuemin="0" 
-                     aria-valuemax="100"></div>
-            </div>
-        </li>
-    `).join('');
-
-    // Backend Skills
-    const backendList = document.querySelector('.skills-section .resume-skill-item:nth-child(2) ul');
-    backendList.innerHTML = skills.backend.items.map(skill => `
-        <li class="mb-2">
-            <div class="resume-skill-name">${skill.name}</div>
-            <div class="progress resume-progress">
-                <div class="progress-bar theme-progress-bar-dark" role="progressbar" 
-                     style="width: ${skill.percentage}%" 
-                     aria-valuenow="${skill.percentage}" 
-                     aria-valuemin="0" 
-                     aria-valuemax="100"></div>
-            </div>
-        </li>
-    `).join('');
-
-    // Other Skills
-    const otherList = document.querySelector('.skills-section .resume-skill-item:nth-child(3) ul');
-    otherList.innerHTML = skills.other.items.map(skill => `
-        <li class="list-inline-item"><span class="badge badge-light">${skill}</span></li>
-    `).join('');
+    const skillCategories = ['frontend', 'backend', 'other'];
+    
+    skillCategories.forEach((category, index) => {
+        const list = document.querySelector(`.skills-section .resume-skill-item:nth-child(${index + 1}) ul`);
+        
+        if (category === 'other') {
+            list.innerHTML = skills[category].items.map(skill => `
+                <li class="list-inline-item"><span class="badge badge-light">${skill}</span></li>
+            `).join('');
+        } else {
+            list.innerHTML = skills[category].items.map(skill => `
+                <li class="mb-2">
+                    <div class="resume-skill-name">${skill.name}</div>
+                    <div class="progress resume-progress">
+                        <div class="progress-bar theme-progress-bar-dark" role="progressbar" 
+                             style="width: ${skill.percentage}%" 
+                             aria-valuenow="${skill.percentage}" 
+                             aria-valuemin="0" 
+                             aria-valuemax="100"></div>
+                    </div>
+                </li>
+            `).join('');
+        }
+    });
 }
 
 function loadEducation(education) {
