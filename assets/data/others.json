@@ -1,0 +1,71 @@
+{
+  "skills": {
+    "frontend": {
+      "title": "Frontend",
+      "items": [
+        { "name": "Angular", "percentage": 98 },
+        { "name": "React", "percentage": 94 },
+        { "name": "JavaScript", "percentage": 96 },
+        { "name": "Node.js", "percentage": 92 },
+        { "name": "HTML/CSS/SASS/LESS", "percentage": 96 }
+      ]
+    },
+    "backend": {
+      "title": "Backend",
+      "items": [
+        { "name": "Python/Django", "percentage": 95 },
+        { "name": "Ruby/Rails", "percentage": 92 },
+        { "name": "PHP", "percentage": 86 },
+        { "name": "WordPress/Shopify", "percentage": 82 }
+      ]
+    },
+    "other": {
+      "title": "Others",
+      "items": [
+        "DevOps", "Code Review", "Git", "Unit Testing", 
+        "Wireframing", "Sketch", "Balsamiq", "WordPress", "Shopify"
+      ]
+    }
+  },
+  "education": [
+    {
+      "degree": "MSc in Computer Science",
+      "school": "University College London",
+      "period": "2013 - 2014"
+    },
+    {
+      "degree": "BSc Maths and Physics",
+      "school": "Imperial College London",
+      "period": "2010 - 2013"
+    }
+  ],
+  "awards": [
+    {
+      "name": "Award Name Lorem",
+      "description": "Award desc goes here, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo."
+    },
+    {
+      "name": "Award Name Ipsum",
+      "description": "Award desc goes here, ultricies nec, pellentesque."
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": "Native"
+    },
+    {
+      "name": "French",
+      "level": "Professional"
+    },
+    {
+      "name": "Spanish",
+      "level": "Professional"
+    }
+  ],
+  "interests": [
+    "Climbing",
+    "Snowboarding",
+    "Cooking"
+  ]
+} 

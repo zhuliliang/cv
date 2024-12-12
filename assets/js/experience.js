@@ -41,3 +41,5 @@ async function loadWorkExperience() {
         console.error('Error loading work experience:', error);
     }
 } 
+
+        document.addEventListener("DOMContentLoaded", loadWorkExperience);
